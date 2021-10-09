@@ -1,0 +1,36 @@
+@import "../../Variables.css";
+
+.profile {
+  background-color: white;
+  border-radius: 6px;
+  width: 100%;
+  display: inline-block;
+}
+
+.profile-name {
+  line-height: 1.125rem;
+  padding: var(--small-padding);
+}
+
+.profile-name .name {
+  text-transform: uppercase;
+  font-size: var(--medium-font);
+  font-weight: bold;
+}
+
+.profile-name .title {
+  font-size: var(--small-font);
+  color: #777;
+}
+
+.profile-image {
+  margin-top: calc(-1 * var(--small-margin));
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+  clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+}
+
+.profile-image img {
+  width: 100%;
+}

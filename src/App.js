@@ -1,23 +1,39 @@
-import logo from "./logo.svg";
 import "./App.css";
+import "@fontsource/roboto/400.css";
+import Header from "./components/Header/Header";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Profile from "./components/Profile/Profile";
+import Portfolio from "./components/Portfolio/portfolio";
+import Resume from "./components/Resume/Resume";
+import Footer from "./components/Footer/Footer";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 1
-        </a>
-      </header>
+      <Container>
+        <Grid container>
+          <Grid item xs={12} sm={12} md={4} lg={3}>
+            <Profile />
+          </Grid>
+          <Grid item xs style={{ background: "red" }}>
+            <Header />
+            <Router>
+              <Switch>
+                <Route path="/portfolio">
+                  <Portfolio />
+                </Route>
+                <Route path="/">
+                  <Resume />
+                </Route>
+              </Switch>
+            </Router>
+            <Footer />
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }

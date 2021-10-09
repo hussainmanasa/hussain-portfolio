@@ -1,0 +1,11 @@
+:root {
+  /** Font Sizes */
+  --small-font: 0.8rem;
+  --medium-font: 1.125rem;
+
+  /**Padding */
+  --small-padding: 1.25rem;
+
+  /** Margin*/
+  --small-margin: 0.625rem;
+}
