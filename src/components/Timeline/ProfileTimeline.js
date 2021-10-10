@@ -8,8 +8,9 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import CardTravelIcon from "@mui/icons-material/CardTravel";
 
 import "./ProfileTimeline.css";
+import { Typography } from "@mui/material";
 
-const ProfileTimeline = () => {
+const ProfileTimeline = (props) => {
   return (
     <div>
       <Timeline>
@@ -17,30 +18,26 @@ const ProfileTimeline = () => {
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="primary">
-              <CardTravelIcon />
+              {/* <CardTravelIcon /> */}
+              {props.icon}
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>{/* <CardTravelIcon /> */}</TimelineContent>
+          <TimelineContent>
+            <Typography variant="h6">{props.title}</Typography>
+          </TimelineContent>
         </TimelineItem>
-
-        {/** Items */}
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>Code</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot variant="outlined" color="primary" />
-          </TimelineSeparator>
-          <TimelineContent>Sleep</TimelineContent>
-        </TimelineItem>
+        {props.children}
       </Timeline>
     </div>
   );
 };
+
+export const CustomTimelineSeperator = () => (
+  <TimelineSeparator>
+    <TimelineDot variant="outlined" color="primary" />
+    <TimelineConnector />
+  </TimelineSeparator>
+);
 
 export default ProfileTimeline;

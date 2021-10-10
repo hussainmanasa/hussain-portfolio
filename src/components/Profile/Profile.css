@@ -38,3 +38,7 @@
 .profile-information {
   margin-top: -5rem;
 }
+
+.profile-timeline-content {
+  word-break: break-word;
+}
