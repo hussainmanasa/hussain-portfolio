@@ -34,3 +34,7 @@
 .profile-image img {
   width: 100%;
 }
+
+.profile-information {
+  margin-top: -5rem;
+}

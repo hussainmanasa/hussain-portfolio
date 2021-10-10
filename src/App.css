@@ -1,0 +1,9 @@
+/* Timeline Css */
+
+.MuiTimelineItem-root::before {
+  display: none;
+}
+
+.MuiTimelineItem-root:not(:first-child) {
+  margin-left: 0.7rem;
+}

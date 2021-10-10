@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import React from "react";
 import "./Profile.css";
 import displayImage from "../../assets/images/displayImage.jpg";
+import ProfileTimeline from "../Timeline/ProfileTimeline";
 
 const Profile = () => {
   return (
@@ -15,7 +16,7 @@ const Profile = () => {
       </figure>
 
       <div className="profile-information">
-        Insert Timeline
+        <ProfileTimeline />
         <br />
         <button> My Button</button>
       </div>
