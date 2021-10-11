@@ -1,4 +1,10 @@
 /* Timeline Css */
+.container-shadow {
+  /* box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.13); */
+  box-shadow: var(--primary-box-shadow);
+  -webkit-box-shadow: var(--primary-box-shadow);
+  -moz-box-shadow: var(--primary-box-shadow);
+}
 
 .MuiTimelineItem-root::before {
   display: none;
@@ -6,4 +12,8 @@
 
 .MuiTimelineItem-root:not(:first-child) {
   margin-left: 0.7rem;
+}
+
+.App {
+  margin-top: 4rem;
 }

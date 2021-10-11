@@ -1,11 +1,20 @@
 :root {
   /** Font Sizes */
-  --small-font: 0.8rem;
-  --medium-font: 1.125rem;
+  --small-font: 1rem; /* 13px */
+  --medium-font: 1.125rem; /* 18px */
 
   /**Padding */
   --small-padding: 1.25rem;
 
   /** Margin*/
   --small-margin: 0.625rem;
+
+  /** Text Colors*/
+  --text-description: #777777;
+  --light-background: #ffffff;
+  --primary-color: #ffc107;
+  --primary-text-color: #000000;
+
+  /**Box Shadow */
+  --primary-box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.1);
 }

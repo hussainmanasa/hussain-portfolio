@@ -8,11 +8,14 @@ import ProfileTimeline, {
 import ResumeData from "../../utils/ResumeData";
 import CardTravelIcon from "@mui/icons-material/CardTravel";
 import PersonIcon from "@mui/icons-material/Person";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import CustomButton from "../CustomButton/CustomButton";
+import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
@@ -47,13 +50,22 @@ const Profile = () => {
       </figure>
 
       <div className="profile-information">
-        <ProfileTimeline icon={<PersonIcon />}>
+        <ProfileTimeline icon={<PersonOutlineOutlinedIcon />}>
           <CustomTimelineItem title="Name" text={ResumeData.name} />
           <CustomTimelineItem title="Title" text={ResumeData.title} />
           <CustomTimelineItem title="Email" text={ResumeData.email} />
+
+          {/* {Object.keys(ResumeData.socials).map((key) => (
+            <CustomTimelineItem
+              title={key}
+              text={ResumeData.socials[key].text}
+              link={ResumeData.socials[key].link}
+            />
+          ))} */}
         </ProfileTimeline>
         <br />
-        <button> My Button</button>
+        <CustomButton text="Download CV" icon={<FileDownloadOutlinedIcon />} />
+        {/* <button> My Button</button> */}
       </div>
     </div>
   );

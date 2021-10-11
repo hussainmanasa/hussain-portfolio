@@ -1,7 +1,7 @@
 @import "../../Variables.css";
 
 .profile {
-  background-color: white;
+  background-color: var(--light-background);
   border-radius: 6px;
   width: 100%;
   display: inline-block;
@@ -20,7 +20,7 @@
 
 .profile-name .title {
   font-size: var(--small-font);
-  color: #777;
+  color: var(--text-description);
 }
 
 .profile-image {
@@ -41,4 +41,9 @@
 
 .profile-timeline-content {
   word-break: break-word;
+}
+
+.profile-timeline-content span:nth-child(2) {
+  color: var(--text-description);
+  font-size: var(--small-font);
 }

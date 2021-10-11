@@ -14,13 +14,13 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Grid container>
+        <Grid container spacing={7}>
           <Grid item xs={12} sm={12} md={4} lg={3}>
             <Profile />
           </Grid>
-          <Grid item xs style={{ background: "red" }}>
-            <Header />
+          <Grid item xs>
             <Router>
+              <Header />
               <Switch>
                 <Route path="/portfolio">
                   <Portfolio />

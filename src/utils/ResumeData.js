@@ -11,22 +11,22 @@ export default {
   job: "Tata Consultancy Services",
   phone: "+91 9920973313",
   socials: {
-    fb: {
+    Facebook: {
       link: "https://www.facebook.com/hussain.manasawala.52/",
       text: "Facebook Link",
       icon: <FacebookIcon />,
     },
-    git: {
+    Github: {
       link: "https://github.com/hussainmanasa",
       text: "Github Link",
       icon: <GitHubIcon />,
     },
-    insta: {
+    Instagram: {
       link: "https://www.instagram.com/mr.nullpointer/",
       text: "Instagram Link",
       icon: <InstagramIcon />,
     },
-    linkedIn: {
+    LinkedIn: {
       link: "https://www.linkedin.com/in/hussain-manasawala/",
       text: "LinkedIn Link",
       icon: <LinkedInIcon />,
