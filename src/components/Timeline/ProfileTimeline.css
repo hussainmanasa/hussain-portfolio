@@ -1,0 +1,3 @@
+.MuiTimelineItem-root:last-child .MuiTimelineConnector-root {
+  display: none;
+}

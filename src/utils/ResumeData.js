@@ -7,7 +7,7 @@ export default {
   name: "Hussain Manasawala",
   title: "Web/Mobile App Developer",
   birthday: "22nd July 1997",
-  email: "manasawala_hussai@yahoo.com",
+  email: "manasawala_hussain@yahoo.com",
   job: "Tata Consultancy Services",
   phone: "+91 9920973313",
   socials: {

@@ -14,12 +14,17 @@ const Header = (props) => {
       {/* HomePage */}
       <Nav.Link as={NavLink} to="/" className="header-home-brand">
         <Navbar.Brand className="header-home">
-          <HomeIcon />
+          <HomeIcon sx={{ color: "primary.text" }} />
         </Navbar.Brand>
       </Nav.Link>
-
+      <div className="header-right">
+        {Object.keys(ResumeData.socials).map((key) => (
+          <a key={key} href={ResumeData.socials[key].link} target="_blank">
+            {ResumeData.socials[key].icon}
+          </a>
+        ))}
+      </div>
       <Navbar.Toggle />
-
       <Navbar.Collapse>
         <Nav className="header-left">
           {/* Resume link */}
@@ -42,14 +47,6 @@ const Header = (props) => {
             Portfolio
           </Nav.Link>
         </Nav>
-
-        <div className="header-right">
-          {Object.keys(ResumeData.socials).map((key) => (
-            <a href={ResumeData.socials[key].link} target="_blank">
-              {ResumeData.socials[key].icon}
-            </a>
-          ))}
-        </div>
       </Navbar.Collapse>
     </Navbar>
   );

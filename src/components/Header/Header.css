@@ -25,6 +25,7 @@
 }
 .header .header-right {
   /* margin-right: var(--small-padding); */
+  order: 1;
 }
 
 .header .navbar-nav .nav-link,
@@ -59,4 +60,17 @@
 
 .header .header-right > a > .MuiSvgIcon-root:hover {
   color: var(--primary-color);
+}
+
+.header .navbar-toggler {
+  border-color: transparent;
+}
+
+@media (max-width: 430px) {
+  .header .header-right {
+    /* margin-right: var(--small-padding); */
+    order: 0;
+    flex: 1 0 auto;
+    text-align: end;
+  }
 }
