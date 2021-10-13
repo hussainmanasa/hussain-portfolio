@@ -17,3 +17,11 @@
 .App {
   margin-top: 4rem;
 }
+
+.main-content {
+  background-color: var(--light-background);
+  /* min-height: 100vh; */
+  margin: var(--medium-margin) 0;
+  border-radius: var(--common-border-radius);
+  padding: var(--medium-padding);
+}

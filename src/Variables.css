@@ -6,19 +6,28 @@
 
   /**Padding */
   --small-padding: 1.25rem;
+  --medium-padding: 1.8rem;
 
   /** Margin*/
   --small-margin: 0.625rem;
+  --medium-margin: 1.8rem;
 
   /** Text Colors*/
   --text-description: #777777;
   --light-background: #ffffff;
   --primary-color: #ffc107;
   --primary-text-color: #000000;
+  --secondary-text-color: #4c4c4c;
 
   /**Box Shadow */
   --primary-box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.1);
 
   /* Footer Color */
   --footer-color: #1e1e1e;
+
+  /* Border Radius */
+  --common-border-radius: 8px;
+
+  /* Paragraph margin */
+  --para-margin: 1rem;
 }

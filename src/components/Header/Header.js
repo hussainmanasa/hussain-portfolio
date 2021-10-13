@@ -14,7 +14,7 @@ const Header = (props) => {
       {/* HomePage */}
       <Nav.Link as={NavLink} to="/" className="header-home-brand">
         <Navbar.Brand className="header-home">
-          <HomeIcon sx={{ color: "primary.text" }} />
+          <HomeIcon sx={{ color: "primary.icon" }} />
         </Navbar.Brand>
       </Nav.Link>
       <div className="header-right">

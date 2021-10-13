@@ -2,11 +2,15 @@
   background: var(--footer-color);
   min-height: 50px;
   color: #fff;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
+  border-radius: var(--common-border-radius);
+  -webkit-border-radius: var(--common-border-radius);
+  -moz-border-radius: var(--common-border-radius);
   /* line-height: 72px; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-copyright {
+  font-size: var(--extra-small-font);
 }

@@ -5,12 +5,12 @@ import ResumeData from "../../utils/ResumeData";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer container-shadow">
       {/* <div className="footer-left">
         <Typography className="footer-name">{ResumeData.name}</Typography>
       </div> */}
       <div className="footer-right">
-        <Typography className="footer-copyright">
+        <Typography variant="body2" className="footer-copyright">
           &copy; Developed by Hussain Manasawala
         </Typography>
       </div>

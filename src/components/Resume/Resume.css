@@ -1,0 +1,31 @@
+.about-us .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.about-description {
+  white-space: pre-line;
+  color: var(--secondary-text-color);
+}
+
+.resume-timeline .section-title {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.resume-timeline .section-title .section-title-text {
+  /* font-size: 1rem; */
+  font-weight: 600;
+  margin-bottom: 0;
+  position: relative;
+}
+.resume-timeline .section-title span {
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.4;
+  left: 0;
+  background-color: var(--primary-color);
+}
