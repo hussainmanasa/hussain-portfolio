@@ -10,7 +10,12 @@ const BootstrapButton = styled(Button)({
 const CustomButton = (props) => {
   return (
     <div className="custom-button">
-      <BootstrapButton variant="contained" endIcon={props.icon} color="primary">
+      <BootstrapButton
+        variant="contained"
+        endIcon={props.icon}
+        color="primary"
+        disabled={true}
+      >
         {props.text}
       </BootstrapButton>
     </div>

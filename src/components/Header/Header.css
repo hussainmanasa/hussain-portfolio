@@ -5,8 +5,7 @@
   -moz-box-shadow: var(--primary-box-shadow);
   padding-top: 0;
   padding-bottom: 0;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-radius: 6px;
 }
 
 .header .header-link {

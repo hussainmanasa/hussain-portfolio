@@ -35,4 +35,43 @@ export default {
       icon: <LinkedInIcon />,
     },
   },
+  experiences: [
+    {
+      title: "System Engineer - Tata Consultancy Services",
+      date: "August 2019 - Present",
+      description:
+        "Working as an innovative front end developer creating scalable web and mobile apps using plane HTML CSS and Javascript, using frameworks like Angular and React and Adobe Magento CMS.",
+    },
+    {
+      title: "System Engineer - Tata Consultancy Services",
+      date: "August 2019 - Present",
+      description:
+        "Working as an innovative front end developer creating scalable web and mobile apps using plane HTML CSS and Javascript, using frameworks like Angular and React and Adobe Magento CMS.",
+    },
+  ],
+  education: [
+    {
+      title: "B.E Computer Engineering - Mumbai University",
+      date: "2015 - 2019",
+    },
+    {
+      title: "Sr. Secondary Education - CBSE Board",
+      date: "2013 - 2015",
+    },
+  ],
+  skils: [
+    {
+      title: "Front-End",
+      description: [
+        "Angular",
+        "Ionic",
+        "Bootstrap",
+        "ReactJs",
+        "React Native",
+        "JavaScript",
+        "TypeScript",
+        "MaterialUI",
+      ],
+    },
+  ],
 };

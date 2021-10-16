@@ -8,19 +8,19 @@
   color: var(--secondary-text-color);
 }
 
-.resume-timeline .section-title {
+.section .section-title {
   position: relative;
   display: inline-block;
   padding: 0 3px;
 }
 
-.resume-timeline .section-title .section-title-text {
+.section .section-title .section-title-text {
   /* font-size: 1rem; */
   font-weight: 600;
   margin-bottom: 0;
   position: relative;
 }
-.resume-timeline .section-title span {
+.section .section-title span {
   position: absolute;
   height: 7px;
   width: 100%;
@@ -28,4 +28,16 @@
   opacity: 0.4;
   left: 0;
   background-color: var(--primary-color);
+}
+
+/* Work Timeline */
+
+.resume-timeline .exp-timeline-title,
+.resume-timeline .edu-timeline-title {
+  font-weight: bold;
+}
+
+.resume-timeline .exp-timeline-desc {
+  margin-top: var(--small-margin);
+  margin-bottom: var(--small-margin);
 }

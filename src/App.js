@@ -4,8 +4,8 @@ import Header from "./components/Header/Header";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Profile from "./components/Profile/Profile";
-import Portfolio from "./components/Portfolio/portfolio";
-import Resume from "./components/Resume/Resume";
+import Portfolio from "./pages/Portfolio/portfolio";
+import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
