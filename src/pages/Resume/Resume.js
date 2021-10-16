@@ -7,16 +7,45 @@ import ProfileTimeline, {
 } from "../../components/Timeline/ProfileTimeline";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
-
-import {
-  TimelineContent,
-  TimelineItem,
-  TimelineSeparator,
-  TimelineDot,
-  TimelineConnector,
-} from "@mui/lab";
+import Slider from "react-slick";
+import { TimelineContent, TimelineItem } from "@mui/lab";
+import Paper from "@mui/material/Paper";
 
 const Resume = () => {
+  var settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: true,
+    speed: 500,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
   return (
     <>
       {/* About Us */}
@@ -101,6 +130,24 @@ const Resume = () => {
         <Grid item className="section-title">
           <span></span>
           <h5 className="section-title-text">My Skills</h5>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Grid container>
+            <Grid item xs>
+              <Slider {...settings}>
+                {ResumeData.skils.map((skill) => (
+                  <Paper key={skill.title} elevation={3} className="slide">
+                    <img alt="" loading="lazy" src={skill.icon} />
+                    {/* <h3>{skill.title}</h3> */}
+                  </Paper>
+                ))}
+                {/* <Paper elevation={3} className="slide">
+                  <h3>test</h3>
+                </Paper> */}
+              </Slider>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </>

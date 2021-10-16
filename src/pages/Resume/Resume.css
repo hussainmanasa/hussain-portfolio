@@ -12,6 +12,7 @@
   position: relative;
   display: inline-block;
   padding: 0 3px;
+  margin-bottom: var(--small-margin);
 }
 
 .section .section-title .section-title-text {
@@ -20,6 +21,7 @@
   margin-bottom: 0;
   position: relative;
 }
+
 .section .section-title span {
   position: absolute;
   height: 7px;
@@ -40,4 +42,24 @@
 .resume-timeline .exp-timeline-desc {
   margin-top: var(--small-margin);
   margin-bottom: var(--small-margin);
+}
+
+.slick-slide > div {
+  margin: 10px;
+  height: 125px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+
+.resume-skills .slide {
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+}
+
+.resume-skills .slide img {
+  width: 50%;
+  margin: auto;
+  /* height: inherit; */
 }

@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
 import "./Footer.css";
-import ResumeData from "../../utils/ResumeData";
 
 const Footer = () => {
   return (

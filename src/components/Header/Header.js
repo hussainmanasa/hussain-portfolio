@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import { Container, Nav, NavDropdown } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link, NavLink, withRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import ResumeData from "../../utils/ResumeData";
 import "./Header.css";
@@ -19,7 +19,12 @@ const Header = (props) => {
       </Nav.Link>
       <div className="header-right">
         {Object.keys(ResumeData.socials).map((key) => (
-          <a key={key} href={ResumeData.socials[key].link} target="_blank">
+          <a
+            key={key}
+            href={ResumeData.socials[key].link}
+            target="_blank"
+            rel="noreferrer"
+          >
             {ResumeData.socials[key].icon}
           </a>
         ))}
@@ -31,7 +36,7 @@ const Header = (props) => {
           <Nav.Link
             as={NavLink}
             to="/"
-            className={pathName == "/" ? "header-link-active" : "header-link"}
+            className={pathName === "/" ? "header-link-active" : "header-link"}
           >
             Resume
           </Nav.Link>
@@ -41,7 +46,7 @@ const Header = (props) => {
             as={NavLink}
             to="/portfolio"
             className={
-              pathName == "/portfolio" ? "header-link-active" : "header-link"
+              pathName === "/portfolio" ? "header-link-active" : "header-link"
             }
           >
             Portfolio

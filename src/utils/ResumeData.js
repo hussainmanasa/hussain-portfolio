@@ -2,6 +2,14 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import angularIcon from "../assets/images/skills/angular.svg";
+import ionicIcon from "../assets/images/skills/ionic.svg";
+import bootstrapIcon from "../assets/images/skills/bootstrap.svg";
+import reactIcon from "../assets/images/skills/react.svg";
+import typescriptIcon from "../assets/images/skills/typescript.svg";
+import javascriptIcon from "../assets/images/skills/javascript.svg";
+import githubIcon from "../assets/images/skills/github.svg";
+import magentoIcon from "../assets/images/skills/magento.svg";
 
 export default {
   name: "Hussain Manasawala",
@@ -61,17 +69,36 @@ export default {
   ],
   skils: [
     {
-      title: "Front-End",
-      description: [
-        "Angular",
-        "Ionic",
-        "Bootstrap",
-        "ReactJs",
-        "React Native",
-        "JavaScript",
-        "TypeScript",
-        "MaterialUI",
-      ],
+      title: "Angular",
+      icon: angularIcon,
+    },
+    {
+      title: "Ionic",
+      icon: ionicIcon,
+    },
+    {
+      title: "React",
+      icon: reactIcon,
+    },
+    {
+      title: "Bootstrap",
+      icon: bootstrapIcon,
+    },
+    {
+      title: "Typescript",
+      icon: typescriptIcon,
+    },
+    {
+      title: "Javascript",
+      icon: javascriptIcon,
+    },
+    {
+      title: "Github",
+      icon: githubIcon,
+    },
+    {
+      title: "Magento",
+      icon: magentoIcon,
     },
   ],
 };

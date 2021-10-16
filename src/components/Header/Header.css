@@ -65,7 +65,7 @@
   border-color: transparent;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .header .header-right {
     /* margin-right: var(--small-padding); */
     order: 0;

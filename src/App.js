@@ -7,6 +7,8 @@ import Profile from "./components/Profile/Profile";
 import Portfolio from "./pages/Portfolio/portfolio";
 import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer/Footer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -18,7 +20,7 @@ function App() {
           <Grid item xs={12} sm={12} md={4} lg={3}>
             <Profile />
           </Grid>
-          <Grid item xs>
+          <Grid item xs={12} sm={12} md={8} lg={9}>
             <Router>
               <Header />
               <div className="main-content container-shadow">

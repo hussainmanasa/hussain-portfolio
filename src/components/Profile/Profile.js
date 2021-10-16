@@ -6,14 +6,9 @@ import ProfileTimeline, {
   CustomTimelineSeperator,
 } from "../Timeline/ProfileTimeline";
 import ResumeData from "../../utils/ResumeData";
-import CardTravelIcon from "@mui/icons-material/CardTravel";
-import PersonIcon from "@mui/icons-material/Person";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import CustomButton from "../CustomButton/CustomButton";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
@@ -24,7 +19,7 @@ const CustomTimelineItem = ({ title, text, link }) => (
       {link ? (
         <Typography className="profile-timeline-content">
           <span>{title}:</span>
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             {text}
           </a>
         </Typography>
