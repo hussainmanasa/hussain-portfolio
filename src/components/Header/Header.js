@@ -12,7 +12,11 @@ const Header = (props) => {
   return (
     <Navbar expand="lg" sticky="top" className="header">
       {/* HomePage */}
-      <Nav.Link as={NavLink} to="/" className="header-home-brand">
+      <Nav.Link
+        as={NavLink}
+        to={process.env.PUBLIC_URL + "/"}
+        className="header-home-brand"
+      >
         <Navbar.Brand className="header-home">
           <HomeIcon sx={{ color: "primary.icon" }} />
         </Navbar.Brand>
@@ -35,8 +39,12 @@ const Header = (props) => {
           {/* Resume link */}
           <Nav.Link
             as={NavLink}
-            to="/"
-            className={pathName === "/" ? "header-link-active" : "header-link"}
+            to={process.env.PUBLIC_URL + "/"}
+            className={
+              pathName === process.env.PUBLIC_URL + "/"
+                ? "header-link-active"
+                : "header-link"
+            }
           >
             Resume
           </Nav.Link>

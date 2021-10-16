@@ -28,7 +28,7 @@ function App() {
                   <Route path="/portfolio">
                     <Portfolio />
                   </Route>
-                  <Route path="/">
+                  <Route path={process.env.PUBLIC_URL + "/"}>
                     <Resume />
                   </Route>
                 </Switch>
