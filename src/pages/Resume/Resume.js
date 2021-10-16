@@ -129,7 +129,7 @@ const Resume = () => {
       <Grid container className="section resume-skills">
         <Grid item className="section-title">
           <span></span>
-          <h5 className="section-title-text">My Skills</h5>
+          <h5 className="section-title-text">Skills</h5>
         </Grid>
 
         <Grid item xs={12}>
