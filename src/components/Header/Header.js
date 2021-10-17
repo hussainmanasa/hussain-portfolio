@@ -24,6 +24,7 @@ const Header = (props) => {
       <div className="header-right">
         {Object.keys(ResumeData.socials).map((key) => (
           <a
+            className={ResumeData.socials[key].cssClass}
             key={key}
             href={ResumeData.socials[key].link}
             target="_blank"

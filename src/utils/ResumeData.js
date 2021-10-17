@@ -26,21 +26,25 @@ export default {
       link: "https://www.facebook.com/hussain.manasawala.52/",
       text: "Facebook Link",
       icon: <FacebookIcon />,
+      cssClass: "fb-icon",
     },
     Github: {
       link: "https://github.com/hussainmanasa",
       text: "Github Link",
       icon: <GitHubIcon />,
+      cssClass: "git-icon",
     },
     Instagram: {
       link: "https://www.instagram.com/mr.nullpointer/",
       text: "Instagram Link",
       icon: <InstagramIcon />,
+      cssClass: "insta-icon",
     },
     LinkedIn: {
       link: "https://www.linkedin.com/in/hussain-manasawala/",
       text: "LinkedIn Link",
       icon: <LinkedInIcon />,
+      cssClass: "linkedin-icon",
     },
   },
   experiences: [

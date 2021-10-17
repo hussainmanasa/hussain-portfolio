@@ -57,8 +57,37 @@
   margin-right: var(--small-padding);
 }
 
+.header .header-right > a {
+  height: 22px;
+  width: 40px;
+}
+
+.header .header-right > a > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+}
+
 .header .header-right > a > .MuiSvgIcon-root:hover {
-  color: var(--primary-color);
+  transform: scale(1.3);
+}
+
+.header .header-right > .fb-icon > .MuiSvgIcon-root:hover {
+  color: var(--fb-hover-color);
+  transition: all ease 0.2s;
+}
+
+.header .header-right > .insta-icon > .MuiSvgIcon-root:hover {
+  color: var(--insta-hover-color);
+  transition: all ease 0.2s;
+}
+
+.header .header-right > .git-icon > .MuiSvgIcon-root:hover {
+  color: var(--git-hover-color);
+  transition: all ease 0.2s;
+}
+
+.header .header-right > .linkedin-icon > .MuiSvgIcon-root:hover {
+  color: var(--linkedin-hover-color);
+  transition: all ease 0.2s;
 }
 
 .header .navbar-toggler {

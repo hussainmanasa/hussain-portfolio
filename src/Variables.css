@@ -30,4 +30,10 @@
 
   /* Paragraph margin */
   --para-margin: 1rem;
+
+  /* Hover colors for Social Icons */
+  --fb-hover-color: #3b5998;
+  --insta-hover-color: #cd486b;
+  --git-hover-color: #040204;
+  --linkedin-hover-color: #04669a;
 }

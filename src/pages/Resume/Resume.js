@@ -14,7 +14,7 @@ import Paper from "@mui/material/Paper";
 const Resume = () => {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: true,
