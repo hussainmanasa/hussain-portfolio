@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hussain-portfolio/static/css/main.22f8205d.chunk.css",
-    "main.js": "/hussain-portfolio/static/js/main.8203c4a5.chunk.js",
-    "main.js.map": "/hussain-portfolio/static/js/main.8203c4a5.chunk.js.map",
+    "main.css": "/hussain-portfolio/static/css/main.2225ea99.chunk.css",
+    "main.js": "/hussain-portfolio/static/js/main.ea47e5f6.chunk.js",
+    "main.js.map": "/hussain-portfolio/static/js/main.ea47e5f6.chunk.js.map",
     "runtime-main.js": "/hussain-portfolio/static/js/runtime-main.f3fa4f2e.js",
     "runtime-main.js.map": "/hussain-portfolio/static/js/runtime-main.f3fa4f2e.js.map",
     "static/css/2.e3794a5c.chunk.css": "/hussain-portfolio/static/css/2.e3794a5c.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.7f40f140.chunk.js.map": "/hussain-portfolio/static/js/3.7f40f140.chunk.js.map",
     "index.html": "/hussain-portfolio/index.html",
     "static/css/2.e3794a5c.chunk.css.map": "/hussain-portfolio/static/css/2.e3794a5c.chunk.css.map",
-    "static/css/main.22f8205d.chunk.css.map": "/hussain-portfolio/static/css/main.22f8205d.chunk.css.map",
+    "static/css/main.2225ea99.chunk.css.map": "/hussain-portfolio/static/css/main.2225ea99.chunk.css.map",
     "static/js/2.1fb386b7.chunk.js.LICENSE.txt": "/hussain-portfolio/static/js/2.1fb386b7.chunk.js.LICENSE.txt",
     "static/media/Hussain_Manasawala_Resume.d092cbf7.pdf": "/hussain-portfolio/static/media/Hussain_Manasawala_Resume.d092cbf7.pdf",
     "static/media/angular.3516857b.svg": "/hussain-portfolio/static/media/angular.3516857b.svg",
@@ -32,7 +32,7 @@
     "static/js/runtime-main.f3fa4f2e.js",
     "static/css/2.e3794a5c.chunk.css",
     "static/js/2.1fb386b7.chunk.js",
-    "static/css/main.22f8205d.chunk.css",
-    "static/js/main.8203c4a5.chunk.js"
+    "static/css/main.2225ea99.chunk.css",
+    "static/js/main.ea47e5f6.chunk.js"
   ]
 }
