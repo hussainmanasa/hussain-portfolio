@@ -8,13 +8,15 @@ const BootstrapButton = styled(Button)({
 });
 
 const CustomButton = (props) => {
+  const { buttonHandler = () => {} } = props;
   return (
     <div className="custom-button">
       <BootstrapButton
         variant="contained"
         endIcon={props.icon}
         color="primary"
-        disabled={true}
+        disabled={false}
+        onClick={buttonHandler}
       >
         {props.text}
       </BootstrapButton>

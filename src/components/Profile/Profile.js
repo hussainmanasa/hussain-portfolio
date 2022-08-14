@@ -11,6 +11,7 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
 import CustomButton from "../CustomButton/CustomButton";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+import Resume from "../../resume/Hussain_Manasawala_Resume.pdf";
 
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
@@ -34,6 +35,12 @@ const CustomTimelineItem = ({ title, text, link }) => (
 );
 
 const Profile = () => {
+  const onDownloadHandler = () => {
+    const link = document.createElement("a");
+    link.download = `Hussain_Manasawala_Resume.pdf`;
+    link.href = Resume;
+    link.click();
+  };
   return (
     <div className="profile container-shadow">
       <div className="profile-name">
@@ -59,7 +66,11 @@ const Profile = () => {
           ))} */}
         </ProfileTimeline>
         <br />
-        <CustomButton text="Download CV" icon={<FileDownloadOutlinedIcon />} />
+        <CustomButton
+          buttonHandler={onDownloadHandler}
+          text="Download CV"
+          icon={<FileDownloadOutlinedIcon />}
+        />
         {/* <button> My Button</button> */}
       </div>
     </div>
