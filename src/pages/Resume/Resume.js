@@ -77,8 +77,8 @@ const Resume = () => {
             <Grid item sm={12} md={6}>
               {/* Experiences */}
               <ProfileTimeline icon={<WorkIcon />} title="Work Experience">
-                {ResumeData.experiences.map((exp) => (
-                  <TimelineItem>
+                {ResumeData.experiences.map((exp, index) => (
+                  <TimelineItem key={index}>
                     <CustomTimelineSeperator />
 
                     <TimelineContent>
@@ -102,8 +102,8 @@ const Resume = () => {
             <Grid item sm={12} md={6}>
               {/* Education Details */}
               <ProfileTimeline icon={<SchoolIcon />} title="Education">
-                {ResumeData.education.map((edu) => (
-                  <TimelineItem>
+                {ResumeData.education.map((edu, index) => (
+                  <TimelineItem key={index}>
                     <CustomTimelineSeperator />
 
                     <TimelineContent>
