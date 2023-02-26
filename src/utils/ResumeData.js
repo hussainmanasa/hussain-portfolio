@@ -58,7 +58,7 @@ export default {
       title: "Software Engineer - Neosoft Technologies",
       date: "June 2022 - Present",
       description:
-        "Currently working on building React Apps and helping ideas to bring to life.",
+        "Innovative frontend developer full of life and inspiration. Working with my hands to make magic on the internet. Moreover, I am also involded in mentoring the new borns in the IT world.",
     },
   ],
   education: [
