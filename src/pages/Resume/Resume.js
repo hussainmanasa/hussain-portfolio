@@ -10,6 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import Slider from "react-slick";
 import { TimelineContent, TimelineItem } from "@mui/lab";
 import Paper from "@mui/material/Paper";
+import { TypeAnimation } from "react-type-animation";
 
 const Resume = () => {
   var settings = {
@@ -51,12 +52,14 @@ const Resume = () => {
       {/* About Us */}
       <Grid container className="section">
         <Grid item className="about-us">
-          {/* <Typography mb={2} variant="h5">
-            About Me
-          </Typography> */}
           <Grid item xs={12}>
             <Typography className="title" mb={2} variant="subtitle1">
-              {ResumeData.about_title}
+              <TypeAnimation
+                sequence={[ResumeData.about_title, 1000]}
+                speed={50}
+                repeat={Infinity}
+                cursor={false}
+              ></TypeAnimation>
             </Typography>
             <Typography className="about-description" mb={2} variant="body1">
               {ResumeData.about}
